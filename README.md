@@ -10,6 +10,10 @@ Make a shared state Websockets drawing program
 Prereqs
 =======
 
+virtualenv venv --python=python3
+
+source venv/bin/activate
+
 pip install flask-sockets
 
 pip install ws4py

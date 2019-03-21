@@ -167,10 +167,10 @@ function addEntity(entity, data) {
 
 // send json through html sockets
 // https://blog.revathskumar.com/2015/08/websockets-simple-client-and-server.html
-    json={
-        entity:data
-    };
-    
+    // debug("add ent:" +entity, type(data) )
+    // print(type(data))
+    json={}
+    json[entity]=data
     socket.send(JSON.stringify(json));
 }
 var counter = 0;

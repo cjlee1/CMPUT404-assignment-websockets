@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 import flask
-from flask import Flask, request
+from flask import Flask, request,redirect
 from flask_sockets import Sockets
 import gevent
 from gevent import queue
