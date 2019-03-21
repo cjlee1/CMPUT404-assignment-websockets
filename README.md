@@ -9,6 +9,7 @@ Make a shared state Websockets drawing program
 
 Prereqs
 =======
+Create a virtual environment and install the required dependencies.
 
 virtualenv venv --python=python3
 
@@ -61,4 +62,8 @@ Contributors
 
 * Mark Galloway
 * Abram Hindle
+<<<<<<< HEAD
 * CAlvin Lee
+=======
+* Cole Mackenzie
+>>>>>>> c8f52a6c51b94cd4ddc7df9d5485a17564a45160
