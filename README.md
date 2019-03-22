@@ -20,9 +20,12 @@ pip install flask-sockets
 pip install ws4py
 
 pip install gunicorn
+
 ---
+
 or 
 pip install -r requirements.txt
+
 Contributors / Licensing
 ========================
 
