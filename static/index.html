@@ -173,6 +173,14 @@ function addEntity(entity, data) {
     json[entity]=data
     socket.send(JSON.stringify(json));
 }
+function addEntityToWorldFromMessage(message) {
+    for (var object in message){
+        world[object] = message[object];
+         // (but should we?)
+    }
+}
+
+
 var counter = 0;
 function addEntityWithoutName(data) {
     var name = "X"+(counter++)%100;
@@ -318,9 +326,9 @@ function wsSetup() {
             // tymeJV
             // iteratating over json object
             // https://stackoverflow.com/questions/34907982/looping-through-json-data-to-generate-html
-            for (var object in message){
-                world[object]=message[object];
-            }
+           
+            addEntityToWorldFromMessage(message)
+
             drawNextFrame();        
         } catch (e) {
             alert("socket on message: " + e);
