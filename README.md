@@ -14,13 +14,15 @@ Create a virtual environment and install the required dependencies.
 virtualenv venv --python=python3
 
 source venv/bin/activate
-
+---
 pip install flask-sockets
 
 pip install ws4py
 
 pip install gunicorn
-
+---
+or 
+pip install -r requirements.txt
 Contributors / Licensing
 ========================
 
